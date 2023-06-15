@@ -3,6 +3,7 @@ package com.bmesquita.calculator
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import com.bmesquita.calculator.presentation.CalculatorScreen
 import com.bmesquita.calculator.ui.theme.CalculatorTheme
 
 class MainActivity : ComponentActivity() {
@@ -10,7 +11,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             CalculatorTheme {
-
+                CalculatorScreen()
             }
         }
     }
